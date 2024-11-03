@@ -1,0 +1,668 @@
+2024/10/27-16:12:00 INFO  [main] com.jsh.erp.ErpApplication - Starting ErpApplication on DESKTOP-QHFRGJF with PID 5300 (D:\Project\ERP\jshERP-boot\target\classes started by reed in D:\Project\ERP)
+2024/10/27-16:12:00 DEBUG [main] com.jsh.erp.ErpApplication - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2024/10/27-16:12:00 INFO  [main] com.jsh.erp.ErpApplication - No active profile set, falling back to default profiles: default
+2024/10/27-16:12:03 ERROR [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:601)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a$$FastClassBySpringCGLIB$$3c9caa42.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:22)
+2024/10/27-16:12:03 ERROR [main] org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:22)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	... 55 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:51)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:604)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a$$FastClassBySpringCGLIB$$3c9caa42.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89884a1a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+2024/10/27-16:13:40 DEBUG [background-preinit] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2024/10/27-16:13:40 INFO  [main] com.jsh.erp.ErpApplication - Starting ErpApplication on DESKTOP-QHFRGJF with PID 5564 (D:\Project\ERP\jshERP-boot\target\classes started by reed in D:\Project\ERP)
+2024/10/27-16:13:40 DEBUG [main] com.jsh.erp.ErpApplication - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2024/10/27-16:13:40 INFO  [main] com.jsh.erp.ErpApplication - No active profile set, falling back to default profiles: default
+2024/10/27-16:13:42 ERROR [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:601)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593$$FastClassBySpringCGLIB$$8b973507.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:22)
+2024/10/27-16:13:42 ERROR [main] org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:22)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [D:\Project\ERP\jshERP-boot\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	... 55 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLSyntaxErrorException: Unknown database 'jsh_erp'
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:51)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:604)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593$$FastClassBySpringCGLIB$$8b973507.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8f8df593.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+2024/10/27-16:16:11 INFO  [main] com.jsh.erp.ErpApplication - Starting ErpApplication on DESKTOP-QHFRGJF with PID 5964 (D:\Project\ERP\jshERP-boot\target\classes started by reed in D:\Project\ERP)
+2024/10/27-16:16:11 DEBUG [main] com.jsh.erp.ErpApplication - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2024/10/27-16:16:11 INFO  [main] com.jsh.erp.ErpApplication - No active profile set, falling back to default profiles: default
+2024/10/27-16:16:14 INFO  [main] com.jsh.erp.ErpApplication - Started ErpApplication in 3.275 seconds (JVM running for 3.733)
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==>  Preparing: SELECT id, platform_key, platform_key_info, platform_value FROM jsh_platform_config WHERE (platform_key = ?) 
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==> Parameters: platform_name(String)
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==>  Preparing: SELECT id, platform_key, platform_key_info, platform_value FROM jsh_platform_config WHERE (platform_key = ?) 
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==> Parameters: platform_url(String)
+2024/10/27-16:20:30 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:31 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==>  Preparing: SELECT id, platform_key, platform_key_info, platform_value FROM jsh_platform_config WHERE (platform_key = ?) 
+2024/10/27-16:20:31 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==> Parameters: register_flag(String)
+2024/10/27-16:20:31 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE (login_name = ? AND Status <> ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), 1(Byte)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - ==>  Preparing: SELECT id, tenant_id, login_name, user_num_limit, type, enabled, create_time, expire_time, remark FROM jsh_tenant WHERE (tenant_id = ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - ==> Parameters: 0(Long)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE (login_name = ? AND password = ? AND Status = ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), e10adc3949ba59abbe56e057f20f883e(String), 0(Byte)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE (login_name = ? AND Status = ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), 0(Byte)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.LogMapperEx.insertLogWithUserId - ==>  Preparing: insert into jsh_log (user_id, operation, client_ip, create_time, status, content, tenant_id) values (?, ?, ?, ?, ?, ?, ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.LogMapperEx.insertLogWithUserId - ==> Parameters: 120(Long), 用户(String), 127.0.0.1/127.0.0.1(String), 2024-10-27 16:20:36.605(Timestamp), 0(Byte), 登录admin(String), 0(Long)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.LogMapperEx.insertLogWithUserId - <==    Updates: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 4(String), RoleFunctions(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==>  Preparing: SELECT id, company_name, company_contacts, company_address, company_tel, company_fax, company_post_code, sale_agreement, depot_flag, customer_flag, minus_stock_flag, purchase_by_sale_flag, multi_level_approval_flag, multi_bill_type, force_approval_flag, update_unit_price_flag, over_link_bill_flag, in_out_manage_flag, multi_account_flag, move_avg_price_flag, audit_print_flag, tenant_id, delete_flag FROM jsh_system_config WHERE (delete_flag <> ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 9
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0401(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 2
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 040102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 040104(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0502(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 4
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050203(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050202(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050201(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050204(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0603(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 3
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060301(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060303(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060305(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0801(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 5
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080103(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080105(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080107(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080109(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080111(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0704(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 6
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070402(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070403(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070404(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070405(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070406(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070407(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0301(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 14
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030113(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030105(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030103(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030104(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030106(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030107(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030150(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030108(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030109(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030101(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030110(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030111(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030112(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0101(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 4
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010101(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010103(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010105(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 7
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020101(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020103(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010202(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010204(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010205(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010206(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0001(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 10
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000102(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000103(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000108(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000104(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000105(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000105(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000109(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000106(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000107(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000112(String), 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-7] com.jsh.erp.datasource.mappers.MaterialPropertyMapper.selectByExample - ==>  Preparing: SELECT id, native_name, enabled, sort, another_name, delete_flag FROM jsh_material_property WHERE (delete_flag <> ?) 
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-7] com.jsh.erp.datasource.mappers.MaterialPropertyMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:36 DEBUG [http-nio-9999-exec-7] com.jsh.erp.datasource.mappers.MaterialPropertyMapper.selectByExample - <==      Total: 4
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 4(String), RoleFunctions(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, component, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (delete_flag <> ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-6] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 64
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-9] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==>  Preparing: SELECT id, company_name, company_contacts, company_address, company_tel, company_fax, company_post_code, sale_agreement, depot_flag, customer_flag, minus_stock_flag, purchase_by_sale_flag, multi_level_approval_flag, multi_bill_type, force_approval_flag, update_unit_price_flag, over_link_bill_flag, in_out_manage_flag, multi_account_flag, move_avg_price_flag, audit_print_flag, tenant_id, delete_flag FROM jsh_system_config WHERE (delete_flag <> ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-9] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-9] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-10] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==>  Preparing: SELECT id, platform_key, platform_key_info, platform_value FROM jsh_platform_config WHERE (platform_key = ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-10] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==> Parameters: pay_fee_url(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-10] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-1] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==>  Preparing: select * from jsh_role where 1=1 and ifnull(delete_flag,'0') !='1' and id=? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==>  Preparing: select * from jsh_role where 1=1 and ifnull(delete_flag,'0') !='1' and id=? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==> Parameters: 4(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==> Parameters: 4(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==>  Preparing: SELECT id, company_name, company_contacts, company_address, company_tel, company_fax, company_post_code, sale_agreement, depot_flag, customer_flag, minus_stock_flag, purchase_by_sale_flag, multi_level_approval_flag, multi_bill_type, force_approval_flag, update_unit_price_flag, over_link_bill_flag, in_out_manage_flag, multi_account_flag, move_avg_price_flag, audit_print_flag, tenant_id, delete_flag FROM jsh_system_config WHERE (delete_flag <> ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==>  Preparing: SELECT id, company_name, company_contacts, company_address, company_tel, company_fax, company_post_code, sale_agreement, depot_flag, customer_flag, minus_stock_flag, purchase_by_sale_flag, multi_level_approval_flag, multi_bill_type, force_approval_flag, update_unit_price_flag, over_link_bill_flag, in_out_manage_flag, multi_account_flag, move_avg_price_flag, audit_print_flag, tenant_id, delete_flag FROM jsh_system_config WHERE (delete_flag <> ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - ==> Parameters: 1(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==>  Preparing: select * from jsh_role where 1=1 and ifnull(delete_flag,'0') !='1' and id=? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.DepotItemMapperEx.inOrOutPriceList - ==>  Preparing: SELECT DISTINCT dh.id, dh.discount_last_money, dh.total_price, dh.type, dh.sub_type, dh.oper_time FROM jsh_depot_head dh LEFT JOIN jsh_depot_item di ON dh.id = di.header_id AND ifnull(di.delete_flag, '0') != '1' WHERE di.id IS NOT NULL AND (dh.type = '入库' OR dh.type = '出库') AND dh.oper_time >= ? AND dh.oper_time <= ? AND ifnull(dh.delete_flag, '0') != '1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==> Parameters: 4(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.getBuyAndSaleStatisticsList - ==>  Preparing: SELECT DISTINCT dh.id, dh.discount_last_money, dh.total_price, dh.type, dh.sub_type, dh.oper_time FROM jsh_depot_head dh LEFT JOIN jsh_depot_item di ON dh.id = di.header_id AND ifnull(di.delete_flag, '0') != '1' WHERE di.id IS NOT NULL AND (dh.type = '入库' OR dh.type = '出库') AND dh.oper_time >= ? AND dh.oper_time <= ? AND ifnull(dh.delete_flag, '0') != '1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.DepotItemMapperEx.inOrOutPriceList - ==> Parameters: 2024-05-01 00:00:00(String), 2024-10-27 23:59:59(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.DepotItemMapperEx.inOrOutPriceList - <==      Total: 0
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==>  Preparing: select * from jsh_user_business where key_id=? and type=? and ifnull(delete_flag,'0') !='1' 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - ==> Parameters: 120(String), UserRole(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.UserBusinessMapperEx.getBasicDataByKeyIdAndType - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.getBuyAndSaleStatisticsList - ==> Parameters: 2024-01-01 00:00:00(String), 2024-12-31 23:59:59(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==>  Preparing: select * from jsh_role where 1=1 and ifnull(delete_flag,'0') !='1' and id=? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - ==> Parameters: 4(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-2] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.getBuyAndSaleStatisticsList - <==      Total: 0
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-3] com.jsh.erp.datasource.mappers.RoleMapperEx.getRoleWithoutTenant - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE (Status = ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: 0(Byte)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 3
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - ==>  Preparing: SELECT id, tenant_id, login_name, user_num_limit, type, enabled, create_time, expire_time, remark FROM jsh_tenant WHERE (tenant_id = ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - ==> Parameters: 0(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-4] com.jsh.erp.datasource.mappers.TenantMapper.selectByExample - <==      Total: 0
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==>  Preparing: SELECT id, platform_key, platform_key_info, platform_value FROM jsh_platform_config WHERE (platform_key = ?) 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - ==> Parameters: pay_fee_url(String)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-8] com.jsh.erp.datasource.mappers.PlatformConfigMapper.selectByExample - <==      Total: 1
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, username, login_name, password, leader_flag, position, department, email, phonenum, ismanager, isystem, Status, description, remark, weixin_open_id, tenant_id FROM jsh_user WHERE id = ? 
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - ==> Parameters: 120(Long)
+2024/10/27-16:20:37 DEBUG [http-nio-9999-exec-5] com.jsh.erp.datasource.mappers.UserMapper.selectByPrimaryKey - <==      Total: 1
